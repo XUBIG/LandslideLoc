@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite this software when using the code."
+type: software
+title: "Two-stage landslide localization: code and reproducible evaluation"
+authors:
+  - family-names: Xu
+    given-names: Bing
+    email: "bing.xu@uni-jena.de"
+    orcid: "https://orcid.org/0009-0001-9671-5478"
+version: 1.0.0
+date-released: 2026-10-17
+license: MIT
+abstract: "Code for two-stage landslide localization and a Direct LLM comparison."

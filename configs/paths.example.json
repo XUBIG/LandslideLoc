@@ -1,0 +1,20 @@
+{
+  "_comment": "Copy to paths.local.json and edit external data locations. Relative paths resolve against the repository root.",
+  "annotations": "data/full/annotations.json",
+  "candidates": "data/full/process/candidates.json",
+  "city_boundary_overrides": "data/full/process/city_boundary_overrides.json",
+  "image_semantics": "data/full/process/image_semantics.json",
+  "direct_answers": "data/full/process/direct_answers.json",
+  "direct_answer_cache": "data/full/process/direct_answer_cache",
+  "development_split": "data/full/splits/development.json",
+  "test_split": "data/full/splits/test.json",
+  "split_summary": "data/full/splits/split_summary.json",
+  "event_groups": "data/full/splits/event_groups.json",
+  "susceptibility_raster": "data/external/susceptibility/n10_conus.tif",
+  "rainfall_dir": "data/external/prism_rainfall",
+  "osm_state_dir": "data/external/osm",
+  "road_state_dir": "data/external/osm/road_only",
+  "hydro_state_dir": "data/external/osm/hydro_only",
+  "national_road_pbf": "data/external/osm/us-latest.osm.pbf",
+  "output_root": "outputs"
+}

@@ -1,0 +1,32 @@
+This task involves recognizing only the locations directly affected by a landslide described in a sentence (usually a tweet + additional information).
+
+Instructions:
+- Only extract locations where the landslide occurred or caused damage.
+- For each location, return the following fields in order, separated by commas:  
+  `Street or Place, City or Town, County, State or Region, Country`
+- Do not return any explanations, sentence fragments, or formatting outside the location.
+- If there are multiple locations, return them as separate lines, one per location.
+
+Example 1
+Sentence: State Route 17 from Bear Creek Rd. to Summit Canyon near Glenwood is closed due to mudslide debris.
+Output: Glenwood, Santa Cruz County, California, USA
+
+Example 2
+Sentence: Landslide on Hwy 41 near Millerton, CA has the highway shutdown.
+Output: Millerton, Fresno County, California, USA
+
+Example 3  
+Sentence: Rockslide blocking US 119 at Pineville. #EyewitnessKY
+Output: Pineville, Bell County, Kentucky, USA
+
+Example 4  
+Sentence: Mudslides reported across Oregon after heavy rain.
+Output: Oregon, USA
+
+Example 5
+Sentence: A landslide close to Riverton in Fremont County in Wyoming, USA derailed a train.
+Output: Riverton, Fremont County, Wyoming, USA
+
+---
+Sentence: {text}
+A:

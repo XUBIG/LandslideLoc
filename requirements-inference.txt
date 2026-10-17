@@ -1,0 +1,7 @@
+# Dependencies for scripts/generate_direct_answers.py.
+torch
+transformers
+peft
+accelerate
+safetensors
+sentencepiece

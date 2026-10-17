@@ -1,0 +1,20 @@
+Regenerate Direct LLM answers
+
+Install the model dependencies, then run:
+
+  python -m pip install -r requirements-inference.txt
+  python scripts/generate_direct_answers.py --input data/full/annotations.json --output outputs/direct_answers.json
+
+The input records require case_id or tweets_id and text; mentioned_text is
+optional. Set direct_answers in configs/paths.local.json to the generated file
+before running scripts/run_direct.py. The supplied geocoder cache must cover
+its answers.
+
+Defaults use kittn/mistral-7B-v0.1-hf with the
+xukehu/Mistral-7B-LoRA-Toponym-Resolution adapter and torch.float32.
+The prompt is in docs/prompts/direct_llm.txt. Generation uses temperature=0.7,
+top_p=0.9, top_k=50, num_beams=4, and max_new_tokens=128.
+
+Use --model and --adapter for local model folders, --device to select a device,
+and --resume to continue an interrupted run. Model/runtime versions can affect
+regenerated answers; the supplied answers are used for the reported evaluation.
